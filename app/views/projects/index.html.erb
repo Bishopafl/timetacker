@@ -1,11 +1,14 @@
 <ul>
-	<% @projects.each do |project| %>
-		<li><%= project.name %></li>
+	<% @projects_list.each do |project| %>
+		<li><%= project.name %>
+			<% if project.description != nil %>
+			"We have a description"
+			-
+			<%= project.description %>
+		</li>
+		<% end %>
 	<% end %>
 </ul>
 
-<ul><strong>
-	<% @projects.each do |project| %>
-		<li><%= project.description %></li>
-	<% end %></strong>
-</ul>
+
+

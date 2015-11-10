@@ -7,8 +7,5 @@ class SiteController < ApplicationController
 		render "contact" #displays email addresses 
 	end
 
-	def projects
-		render "projects" #shows table of projects 
-	end
 
 end
