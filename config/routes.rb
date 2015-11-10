@@ -6,7 +6,7 @@ get "/contact" => "site#contact"
 
 get "/projects" => "projects#index"
 
-post("/contacts", :to => "contacts#create")
+get "/projects/:id" => "projects#show"
 
 end
 
