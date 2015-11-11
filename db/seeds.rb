@@ -34,6 +34,19 @@ new_projects.each do |proj|
     # If it doesn't exist (nil), save it
     puts "Creating Project: #{proj.name}"
     proj.save
+
+	entr = Entry.new
+	entr.minutes = 43
+	entr.hours = 4
+	entr.project = proj
+
+	proj.entries.create(hours: 4, minutes: 45)
+	proj.entries.create(hours: 3, minutes: 19)
+	proj.entries.create(hours: 8, minutes: 30)
+	proj.entries.create(hours: 6, minutes: 12)
+	proj.entries.create(hours: 7, minutes: 20)
+	proj.entries.create(hours: 9, minutes: 34)
+	
   end
 end
 
