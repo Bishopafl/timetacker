@@ -18,7 +18,11 @@ class ProjectsController < ApplicationController
 		else
 			render("show")
 		end
-		
+
+	end
+
+	def new
+		render "new"
 	end
 
 end
